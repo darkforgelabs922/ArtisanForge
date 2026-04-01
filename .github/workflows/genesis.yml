@@ -1,0 +1,15 @@
+name: ArtisanForge Decentralized Genesis
+on:
+  push:
+    tags: [ 'genesis-*' ]
+jobs:
+  forge-smart-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Deploying Genesis Contracts to EVM"
+  compile-go-gateway:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Compiling Go Binaries"

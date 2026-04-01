@@ -1,0 +1,9 @@
+node_modules/
+venv/
+__pycache__/
+*.exe
+*.pt
+*.log
+.env
+build/
+target/
